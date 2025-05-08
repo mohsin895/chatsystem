@@ -1,0 +1,29 @@
+@import 'tailwindcss';
+@layer components {
+    .bg-rightActiveColor {
+      @apply bg-[#1caf9a];
+    }
+
+    .bg-bodyColor  {
+        @apply bg-[#e9ecf3];
+      }
+      .bg-rightBarColor{
+        @apply bg-[#364150];
+    }
+    .bg-purpoleCus {
+        @apply bg-[#8E44AD]; /* Example purple color */
+      }
+      
+      .hover\:bg-purpoleCusHover:hover {
+        @apply bg-[#67317d]; /* Slightly darker purple for hover */
+      }
+      .bg-customCyan {
+        @apply bg-[#32c5d2]; /* Example purple color */
+      }
+      
+      .hover\:bg-hoverCyan:hover {
+        @apply bg-[#23959f]; /* Slightly darker purple for hover */
+      }
+      
+  }
+
