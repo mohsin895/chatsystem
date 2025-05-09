@@ -12,9 +12,7 @@ import TicketView from '../views/Admin/Ticket/View.vue'
 import Message from '@/views/Admin/Message.vue'
 
 
-const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
+const routes  = [
     {
        path:'/',
        name:'login',
@@ -76,6 +74,12 @@ const router = createRouter({
    
     { path: '/:pathMatch(.*)*', name: 'NotFound', component: NotFound },
   ]
-})
 
+  
+
+
+const router = createRouter({
+    history: createWebHistory(import.meta.env.BASE_URL),
+    routes
+})
 export default router
